@@ -2,28 +2,45 @@
 <html>
 <head>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>simple crystal game</title>
+  <title>Gem's Game</title>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
 </head>
 <body>
-  <h1>Welcome to the GEM GAME!</h1>
-  <p>For the next game you are going to guess by pressing the gems to add up to the number that we are are displaying below.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+    <div>
+        <h1>Welcome to the GEM GAME!</h1>
+        <p>For the next game you are going to guess by pressing the gems to add up to the number that we are are displaying below.</p>
 
-  <h1>Number to Guess:<span id="number-to-guess"></span></h1>
-
+        <h2>Number to Guess:<span id="number-to-guess"></span></h2>
+    </div>
+  </div>
+</div>
   <!-- Note that this div is now empty. We will fill it dynamically -->
+<div class="container bottom">
+  <div class="row">
+    <div class="col-md-6 left">
   <div id="crystals">
     <img class="gems" src="assets/images/amethyst.png">
     <img class="gems" src="assets/images/avatan.png">
     <img class="gems" src="assets/images/crystal.png">
     <img class="gems" src="assets/images/diamond.png">
-
   </div>
-  <div class="score">
+</div>
+<div class="col-md-6 right">
+  <div> 
+    <h4>User Score: <span class="score"></span></h4>
   </div>
-  <div class="result">
+  <div class="result"> 
+    <h4>Wins: <span id="wins"></span></h4>
+    <h4>Losses: <span id="losses"></span></h4>
   </div>
- 
+</div>
+  </div>
+ </div>
 </body>
 </html>
